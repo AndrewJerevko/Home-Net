@@ -119,6 +119,18 @@ vertical-align: baseline;
     transition: 1s;
 }
 
+.inbox {
+    display: none;
+}
+
+.inbox:checked {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: stretch;
+}
+
 .box a {
     color: blue;
 }

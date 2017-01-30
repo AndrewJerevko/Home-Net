@@ -127,10 +127,66 @@ body {
     width: 145px;
     transition: 0.5s;
 }
+.box2 {
+    color: blue;
+    white-space: nowrap;
+    position: relative;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100%;
+    height: 50px;
+    width: 145px;
+    transition: 0.5s;
+}
+.box3 {
+    color: blue;
+    white-space: nowrap;
+    position: relative;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100%;
+    height: 50px;
+    width: 145px;
+    transition: 0.5s;
+}
+.box4 {
+    color: blue;
+    white-space: nowrap;
+    position: relative;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100%;
+    height: 50px;
+    width: 145px;
+    transition: 0.5s;
+}
+
 .box a {
     color: blue;
 }
+.box2 a {
+    color: blue;
+}
+.box3 a {
+    color: blue;
+}
+.box4 a {
+    color: blue;
+}
+
 .box:hover {
+    margin: -20px auto;
+}
+.box2:hover {
+    margin: -20px auto;
+}
+.box3:hover {
+    margin: -20px auto;
+}
+.box4:hover {
     margin: -20px auto;
 }
 
@@ -138,18 +194,65 @@ body {
     height: 70px;
     width: 70px;
 }
+.box2 img {
+    height: 70px;
+    width: 70px;
+}
+.box3 img {
+    height: 70px;
+    width: 70px;
+}
+.box4 img {
+    height: 70px;
+    width: 70px;
+}
 
 .inbox {
-    top: -120px;
+    display: none;
+    top: -80px;
     position: relative;
-    display: table-cell;
+    width: 100%;
+}
+.inbox2 {
+    display: none;
+    top: -80px;
+    position: relative;
+    width: 100%;
+}
+.inbox3 {
+    display: none;
+    top: -80px;
+    position: relative;
+    width: 100%;
+}
+.inbox4 {
+    display: none;
+    top: -80px;
+    position: relative;
     width: 100%;
 }
 
 .inbox li {
     top: 100px;
     background: blue;
-    display:inline-block;
+    position: relative;
+    transition: 1s;
+}
+.inbox2 li {
+    top: 100px;
+    background: blue;
+    position: relative;
+    transition: 1s;
+}
+.inbox3 li {
+    top: 100px;
+    background: blue;
+    position: relative;
+    transition: 1s;
+}
+.inbox4 li {
+    top: 100px;
+    background: blue;
     position: relative;
     transition: 1s;
 }
@@ -159,15 +262,65 @@ body {
     color: #fff;
     display:block;
     position: relative;
-    width: 400px;
+    width: 500px;
+    height: 40px;
+    line-height: 250%;
+    text-align: center;
+}
+.inbox2 li a {
+    margin: 0 auto;
+    color: #fff;
+    display:block;
+    position: relative;
+    width: 330px;
+    height: 40px;
+    line-height: 250%;
+    text-align: center;
+}
+.inbox3 li a {
+    margin: 0 auto;
+    color: #fff;
+    display:block;
+    position: relative;
+    width: 250px;
+    height: 40px;
+    line-height: 250%;
+    text-align: center;
+}
+.inbox4 li a {
+    margin: 0 auto;
+    color: #fff;
+    display:block;
+    position: relative;
+    width: 500px;
     height: 40px;
     line-height: 250%;
     text-align: center;
 }
 
 .inbox ul {
-    display: none;
-    left: 60px;
+    left: -55px;
+    top: 10px;
+    position: relative;
+    transition: 1s;
+    
+}
+.inbox2 ul {
+    left: -330px;
+    top: 10px;
+    position: relative;
+    transition: 1s;
+    
+}
+.inbox3 ul {
+    left: -610px;
+    top: 10px;
+    position: relative;
+    transition: 1s;
+    
+}
+.inbox4 ul {
+    left: -880px;
     top: 10px;
     position: relative;
     transition: 1s;
@@ -178,11 +331,23 @@ body {
     display: inline-block;
     
 }
+.inbox2 ul li {
+    display: inline-block;
+    
+}
+.inbox3 ul li {
+    display: inline-block;
+    
+}
+.inbox4 ul li {
+    display: inline-block;
+    
+}
 
-.box:hover .inbox ul {
+/*.box:hover .inbox ul {
     top: -20px;
     display: inline-block;
-}
+}*/
             /*INFORMATION*/
             
             /*NEWS*/

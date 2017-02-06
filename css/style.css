@@ -86,7 +86,8 @@ body {
     height: 50px;
     width: 1100px;
     background: -moz-linear-gradient(left, rgba(56, 143, 249, 0.6) 0%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.6) 80%, rgba(56, 143, 249, 0.6) 100%);
-    box-shadow: -10px 0 100px 50px rgb(0, 0, 102);
+    background: -webkit-linear-gradient(left, rgba(56, 143, 249, 0.6) 0%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.6) 80%, rgba(56, 143, 249, 0.6) 100%);
+    box-shadow: -10px 0 50px rgb(0, 0, 102);
     transform: skewX(50deg);
     border-radius: 10px 5px 0 0;
     filter: opacity(0.5);
@@ -342,6 +343,10 @@ body {
 .inbox4 ul li {
     display: inline-block;
     
+}
+
+.ulli li:hover{
+    background: lawngreen;
 }
 
 /*.box:hover .inbox ul {

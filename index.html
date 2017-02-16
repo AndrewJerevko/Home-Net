@@ -6,8 +6,9 @@
   <title>Home-Net</title>
   <link rel="stylesheet" href="css/style.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/func.js"></script>  
+  <script type="text/javascript" src="js/func.js"></script>
 </head>
+
 <body>
   <header class="header">
     <div class="logotip">
@@ -20,16 +21,67 @@
       <!--<a class="ap" href="#2"><div class="share navli">Акции</div></a>-->
       <a class="ap" href="#2">
         <div class="contact navli">Контакты</div>
-      </a>
-      <a class="ap" href="#2">
-        <div class="feedback navli">Отзывы</div>
-      </a>
-      <a class="ap" href="#">
-        <div class="login">login</div>
-      </a>
+        <a class="ap" href="#2">
+          <div class="feedback navli">Отзывы</div>
+        </a>
+        <a class="ap" href="#">
+          <div class="login">login</div>
+        </a>
+        <div id="form">
+          <span id="form_close">X</span>
+          <div id="login" class="a_form">
+            <form action="u.php" autocomplete="on">
+              <h1>Логин</h1>
+              <p>
+                <label for="username" class="uname" data-icon="u">Ваш Логин</label>
+                <input id="username" name="username" required="required" type="text" placeholder="Ваш логин">
+              </p>
+              <p>
+                <label for="password" class="upassword" data-icon="p">Ваш пароль</label>
+                <input id="password" name="password" required="required" type="password" placeholder="Ваш лицевой счет">
+              </p>
+              <div id="flex_log">
+                <input type="submit" value="Вход" id="log_bot" for="a_form">
+                <div id="sub_bot">Регистрация</div>
+              </div>
+          </div>
+          <div id="subscribe" class="b_form">
+            <h1>Регистрация</h1>
+            <p>
+              <div id="flex_log2">
+                <label for="usersign" class="uname" data-icon="u">Логин</label>
+                <input id="usersign" name="usersing" required="required" type="text" placeholder="Укажите ваш логин">
+              </div>
+            </p>
+            <p>
+              <div id="flex_log2">
+                <label for="emailsign" class="youmail" dat-icon="e">Ваш email</label>
+                <input id="emailsign" name="emailsign" required="required" type="text" placeholder="Укажите ваш email">
+              </div>
+            </p>
+            <p>
+              <div id="flex_log2">
+                <label for="passwordsign" class="youpassword" data-icon="p">Ваш пароль</label>
+                <input id="passwordsign" name="passwordsign" required="required" type="password" placeholder="Укажите ваш пароль">
+              </div>
+            </p>
+            <p>
+              <div id="flex_log2">
+                <label for="passwordsign_conf" class="youpassword" data-icon="p">Повторите пароль</label>
+                <input id="passwordsign_conf" name="passwordsign_conf" required="required" type="password" placeholder="Повторите ваш пароль">
+              </div>
+            </p>
+            <div id="flex_log">
+              <input type="submit" value="Регистрация" id="log_bot" for="a_form">
+              <div id="login_bot">Вход</div>
+            </div>
+          </div>
+          </form>
+        </div>
+        <div id="overlay"></div>
     </div>
-    <div class="panel"> </div>
   </header>
+  <div class="panel"> </div>
   <div class="body">
     <div class="menu">
       <div class="box">
@@ -71,17 +123,11 @@
           </ul>
         </div>
       </div>
-            <div class="box4">
+      <div class="box4">
         <a href="" id="aph">
           <img src="img/m4.png" alt="internet">
           <h3>О нас</h3>
         </a>
-        <div class="inbox4" id="fl">
-          <ul class="ulli">
-            <li id="btn10"><a href="#">For Home</a></li>
-            <li id="btn11"><a href="#">For Office</a></li>
-          </ul>
-        </div>
       </div>
     </div>
     <div class="news">
@@ -116,7 +162,31 @@
       </div>
     </div>
   </div>
-  <foter>Dmitry and Andrew 2017</foter>
+  <footer>
+    <div id="tov">
+      &copy; Все права принадлежат: <br> ТОВ "Home-Net" <br>
+    </div>
+    <div id="dev">
+      Разработано: <br> Unic Team Studio
+    </div>
+     <div id="tel">
+      <h2> 228-16-29 </h2><br> Тех. Отдел
+    </div>
+    <div id="work">
+      <div class="wroks">
+        Позвонили <br>
+        <img src="img/technology.png" alt="">
+      </div>
+      <div class="wroks">
+        Подключили <br>
+        <img src="img/settings.png" alt="">
+      </div>
+      <div class="wroks">
+      Интернет <br>
+      <img src="img/arrows.png" alt="">
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

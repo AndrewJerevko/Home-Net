@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('#btn1').click(function () {
-    $(".news").load("../index2.html .2");
+    $(".news").load("../index2.html .1");
   });
   $('#btn2').click(function () {
     $(".news").load("../index2.html .2");
@@ -26,7 +26,6 @@ $(document).ready(function () {
   $('#btn9').click(function () {
     $(".news").load("../index2.html .9");
   });
-
   $(".ulli").click(function () {
     $(".ulli").show();
     return false;
@@ -54,15 +53,16 @@ $(document).ready(function () {
     return false;
   });
   $(".box4").click(function () {
-    $(".news").load("../index2.html .10");
+  $(".news").load("../index2.html .10");
     $(".inbox").hide();
     $(".inbox2").hide();
     $(".inbox3").hide();
     return false;
   });
 
-  $(".contact").click(function () {
-    $(".news").load("../index2.html #contact");
+  $(".contact").click(function(){
+    $(".news").load("../index2.html #contact")
+    return false;
   });
 
   $(".login").click(function () {
@@ -100,7 +100,6 @@ $(document).ready(function () {
       .css('display', 'none')
     return false;
   });
-  
   (function () {
     var widget_id = 867427;
     _shcp = [{
@@ -119,3 +118,4 @@ $(document).ready(function () {
     s.parentNode.insertBefore(hcc, s.nextSibling);
   })();
 });
+

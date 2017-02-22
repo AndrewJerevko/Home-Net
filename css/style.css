@@ -26,7 +26,7 @@ body {
 .navigation {
     margin: auto;
     padding: 20px 0;
-    max-width: 600px;
+    max-width: 700px;
     list-style: none;
     display: flex;
     flex-flow: row wrap;
@@ -40,11 +40,13 @@ body {
     text-transform: uppercase;
     text-align: center;
     line-height: 280%;
-    background: #406cd0;
+    background: rgb(64,108,208) radial-gradient(150% 100% at 50% 5px, rgba(64,108,208,.2), rgba(0,0,0,0));
     height: 45px;
     width: 145px;
     transition: 1s;
     border-radius: 25px;
+    box-shadow: 5px 2px 15px 2px blue;
+    border: 2px solid rgba(64,108,208, 0.6);
 }
 
 .navli:hover {
@@ -65,7 +67,7 @@ body {
 }
 .login {
     text-transform: uppercase;
-    background: rgba(64,108,208, 0.6);
+    background: rgb(64,108,208);
     height: 50px;
     width: 145px;
     text-align: center;
@@ -77,7 +79,7 @@ body {
     transition: 1s;      
 }
 .login:hover{
-    background: rgb(64,108,208);
+    background: rgba(64,108,208, 0.6);
 }
 #logo {
     height: 100px;
@@ -408,27 +410,36 @@ body {
 
 .inbox ul li {
     display: inline-block;
+    border-radius: 25px;
     
 }
 .inbox2 ul li {
     display: inline-block;
+    border-radius: 25px;
     
 }
 .inbox3 ul li {
     display: inline-block;
+    border-radius: 25px;
     
 }
 .inbox4 ul li {
     display: inline-block;
+    border-radius: 25px;
     
 }
 
 .ulli li:hover{
-    background: lawngreen;
+    background: rgb(56, 143, 249);
+    box-shadow: 5px 5px 15px -1px rgb(56, 143, 249);
 }
 #contact {
     text-align: left;
     margin: 200px auto;
+}
+
+.ulli li{
+    box-shadow: 5px 5px 15px -1px blue;
 }
 
 /*.box:hover .inbox ul {
@@ -517,4 +528,45 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+}
+
+.table{
+    margin: 10px 10px;
+    width: 800px;
+    border-collapse: collapse;
+    border: 1px solid transparent;
+}
+
+.table th {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 20px 5px;
+    width: 600px;
+    height: 50px;
+    background: rgba(64,108,208, 0.6)
+}
+.table td{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(56, 143, 249, 0.8)
+}
+#wl{
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 48px;
+    color: white;
+    background-color: blue;
+    border-radius: 12px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    left: 35%;
+    box-shadow: 2px 2px 18px black;
+    transition: 0.5s;
+}
+#wl:hover{
+    background: rgb(56, 143, 249)
+}
+.t3{
+    margin: 10px 10px;
 }

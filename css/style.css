@@ -290,20 +290,28 @@ body {
 
 .inbox {
     display: none;
-    top: -80px;
-    position: relative;
+    left: 38px;
+    top: 30px;
+    position: absolute;
     width: 100%;
+}
+.inbox li:hover{
+    top: 90px;
 }
 .inbox2 {
     display: none;
-    top: -80px;
-    position: relative;
+    top: 30px;
+    left: 310px;
+    position: absolute;
     width: 100%;
 }
-.inbox3 {
+.inbox2 li:hover{
+    top: 90px;
+}
+/*.inbox3 {
     display: none;
     top: -80px;
-    position: relative;
+    position: a;
     width: 100%;
 }
 .inbox4 {
@@ -311,7 +319,7 @@ body {
     top: -80px;
     position: relative;
     width: 100%;
-}
+}*/
 
 .inbox li {
     top: 100px;
